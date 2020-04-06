@@ -13,6 +13,7 @@ public class ProxyPicture implements Picture {
             try {
                 int count = 1;
                 while (count < 6){
+
                     System.out.println("picture download "+count*20+"%");
                     Thread.sleep(2000);
                     count ++;
