@@ -2,7 +2,7 @@ package com.zym.demo.pattendemo.state;
 
 public class SecondLevel extends GameLevel {
 
-    public SecondLevel(GameLevel gameLevel){
+    public SecondLevel(GameLevel gameLevel) {
         this.levelName = "熟练选手";
         this.game = gameLevel.game;
     }

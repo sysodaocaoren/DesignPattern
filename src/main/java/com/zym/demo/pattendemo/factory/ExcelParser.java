@@ -1,6 +1,6 @@
 package com.zym.demo.pattendemo.factory;
 
-public class ExcelParser extends  Parser {
+public class ExcelParser extends Parser {
 
     @Override
     public void parse() {

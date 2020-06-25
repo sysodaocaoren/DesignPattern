@@ -1,10 +1,10 @@
 package com.zym.demo.pattendemo.composite;
 
-public class Office implements OfficeInter{
+public class Office implements OfficeInter {
 
     private String officeName;
 
-    public Office (String OfficeName){
+    public Office(String OfficeName) {
         this.officeName = OfficeName;
     }
 
@@ -18,6 +18,6 @@ public class Office implements OfficeInter{
 
     @Override
     public void revice(String message) {
-        System.out.println("i am "+officeName+" office ,i revice your message :"+message);
+        System.out.println("i am " + officeName + " office ,i revice your message :" + message);
     }
 }

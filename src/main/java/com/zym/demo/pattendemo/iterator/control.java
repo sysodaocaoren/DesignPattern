@@ -7,11 +7,11 @@ public class control {
 
     private List<Channel> channelList = new ArrayList<Channel>();
 
-    public void addChannel(Channel channel){
+    public void addChannel(Channel channel) {
         channelList.add(channel);
     }
 
-    public ChannelIterator createIterator(){
+    public ChannelIterator createIterator() {
         return new ChannelIterator(channelList);
     }
 }

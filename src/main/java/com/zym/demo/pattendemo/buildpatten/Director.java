@@ -4,11 +4,11 @@ public class Director {
 
     private Builder builder;
 
-    public Director(Builder builder){
+    public Director(Builder builder) {
         this.builder = builder;
     }
 
-    public MediaPlayer contructor(){
+    public MediaPlayer contructor() {
         builder.buildMainMode();
         builder.buildPlayMenu();
         builder.buildShowMenu();

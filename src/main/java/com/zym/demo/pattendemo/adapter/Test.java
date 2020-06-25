@@ -1,7 +1,6 @@
 package com.zym.demo.pattendemo.adapter;
 
 /**
- *
  * 适配器模式
  * 需求：windows media和realPlay是两种不同的播放器，要求，写一个类可以支持这两种api
  * 思路：用适配器模式
@@ -17,7 +16,6 @@ public class Test {
         Player play = new WindowsPlayAdapter();
         play.play();
     }
-
 
 
 }

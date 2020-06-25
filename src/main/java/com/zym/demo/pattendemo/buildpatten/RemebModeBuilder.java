@@ -5,6 +5,7 @@ import javafx.scene.media.MediaErrorEvent;
 public class RemebModeBuilder extends Builder {
 
     MediaPlayer mediaPlayer = new MediaPlayer();
+
     @Override
     public void buildMainMode() {
         mediaPlayer.setMainMode(true);

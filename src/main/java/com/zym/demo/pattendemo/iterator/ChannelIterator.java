@@ -31,7 +31,7 @@ public class ChannelIterator implements Iterator {
 
     @Override
     public void next() {
-        if(cursor < channelList.size()){
+        if (cursor < channelList.size()) {
             cursor++;
         }
     }
@@ -43,14 +43,14 @@ public class ChannelIterator implements Iterator {
 
     @Override
     public void previous() {
-        if(cursor > 0){
-            cursor --;
+        if (cursor > 0) {
+            cursor--;
         }
     }
 
     @Override
     public Channel getNextItem() {
-        return cursor == channelList.size() ? channelList.get(cursor):channelList.get(++cursor);
+        return cursor == channelList.size() ? channelList.get(cursor) : channelList.get(++cursor);
     }
 
     @Override

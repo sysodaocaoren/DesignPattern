@@ -9,15 +9,15 @@ public class Govement implements OfficeInter {
 
     private String GovermentName;
 
-    public void addOffice(OfficeInter officeInter){
+    public void addOffice(OfficeInter officeInter) {
         offices.add(officeInter);
     }
 
-    public void removeOffice(OfficeInter officeInter){
+    public void removeOffice(OfficeInter officeInter) {
         offices.remove(officeInter);
     }
 
-    public Govement(String name){
+    public Govement(String name) {
         this.GovermentName = name;
     }
 
@@ -31,7 +31,7 @@ public class Govement implements OfficeInter {
 
     @Override
     public void revice(String message) {
-        System.out.println("i am "+GovermentName+",irevice your message"+message+".i begin send message ~");
+        System.out.println("i am " + GovermentName + ",irevice your message" + message + ".i begin send message ~");
         this.offices.stream().forEach(x -> x.revice(message));
     }
 }

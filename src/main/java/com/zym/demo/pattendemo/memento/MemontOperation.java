@@ -12,7 +12,7 @@ public class MemontOperation {
         this.operationName = operationName;
     }
 
-    public MemontOperation(String name){
+    public MemontOperation(String name) {
         this.operationName = name;
     }
 }

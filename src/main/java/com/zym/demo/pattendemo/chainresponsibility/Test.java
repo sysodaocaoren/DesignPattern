@@ -10,6 +10,7 @@ import com.zym.demo.pattendemo.composite.Office;
  * 大于50个小于200个营长可以决定
  * 大于200个，需要开会决定
  * 思路：用职责链模式开发
+ *
  * @Author zhuyumeng
  * @Since 2020年3月29日20:18:43
  */

@@ -3,6 +3,7 @@ package com.zym.demo.pattendemo.observer;
 /**
  * 观察者模式
  * 需求：当顾客购买的股票变化幅度大于5%时，就通知所有购买的人
+ *
  * @Author zhuyumeng
  * @Since 2020年4月9日21:15:36
  */

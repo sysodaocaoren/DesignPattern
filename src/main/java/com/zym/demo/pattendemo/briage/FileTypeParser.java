@@ -6,8 +6,7 @@ public enum FileTypeParser {
 
     xml("com.zym.demo.pattendemo.briage.XmlFileCovertor"),
     pdf("com.zym.demo.pattendemo.briage.PdfFileCovertor"),
-    sql("com.zym.demo.pattendemo.briage.SqlFileCovertor")
-    ;
+    sql("com.zym.demo.pattendemo.briage.SqlFileCovertor");
 
     private String name;
 
@@ -15,10 +14,10 @@ public enum FileTypeParser {
         this.name = name;
     }
 
-    public static String getNameByValue(String value){
+    public static String getNameByValue(String value) {
 
-        return  Stream.of(FileTypeParser.values())
-                .filter(x ->value.equals(x.toString()))
+        return Stream.of(FileTypeParser.values())
+                .filter(x -> value.equals(x.toString()))
                 .findFirst()
                 .get()
                 .getName();

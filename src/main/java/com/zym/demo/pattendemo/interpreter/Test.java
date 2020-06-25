@@ -3,6 +3,7 @@ package com.zym.demo.pattendemo.interpreter;
 /**
  * 解释器模式
  * 需求：要求用解释器模式来实现 1 and 0，1 or 0的运算
+ *
  * @Author zhuyumeng
  * @Since 2020年3月31日22:04:42
  */

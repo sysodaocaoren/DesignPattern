@@ -2,7 +2,7 @@ package com.zym.demo.pattendemo.state;
 
 public class ProfessionalLevel extends GameLevel {
 
-    public ProfessionalLevel(GameLevel gameLevel){
+    public ProfessionalLevel(GameLevel gameLevel) {
         this.levelName = "专业选手";
         this.game = gameLevel.game;
     }

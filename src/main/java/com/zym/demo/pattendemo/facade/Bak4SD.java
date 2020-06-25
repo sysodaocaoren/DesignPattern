@@ -1,6 +1,6 @@
 package com.zym.demo.pattendemo.facade;
 
-public class Bak4SD implements  BakIntef {
+public class Bak4SD implements BakIntef {
 
     @Override
     public void bak() {

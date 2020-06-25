@@ -6,8 +6,7 @@ public enum TypeParser {
 
     txt("com.zym.demo.pattendemo.factory.TxtParserFactory"),
     sql("com.zym.demo.pattendemo.factory.SqlParserFactory"),
-    excel("com.zym.demo.pattendemo.factory.ExcelParserFactory")
-    ;
+    excel("com.zym.demo.pattendemo.factory.ExcelParserFactory");
 
     private String name;
 
@@ -15,10 +14,10 @@ public enum TypeParser {
         this.name = name;
     }
 
-    public static String getNameByValue(String value){
+    public static String getNameByValue(String value) {
 
-        return  Stream.of(TypeParser.values())
-                .filter(x ->value.equals(x.toString()))
+        return Stream.of(TypeParser.values())
+                .filter(x -> value.equals(x.toString()))
                 .findFirst()
                 .get()
                 .getName();

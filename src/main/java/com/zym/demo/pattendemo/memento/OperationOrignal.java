@@ -4,7 +4,7 @@ public class OperationOrignal {
 
     private String operationName;
 
-    public OperationOrignal(String name){
+    public OperationOrignal(String name) {
         this.operationName = name;
     }
 
@@ -16,15 +16,15 @@ public class OperationOrignal {
         this.operationName = operationName;
     }
 
-    public void restore(MemontOperation memontOperation){
+    public void restore(MemontOperation memontOperation) {
         this.operationName = memontOperation.getOperationName();
     }
 
-    public MemontOperation createMementto(){
+    public MemontOperation createMementto() {
         return new MemontOperation(operationName);
     }
 
-    public void reply(MemontOperation memontOperation){
+    public void reply(MemontOperation memontOperation) {
         this.operationName = memontOperation.getOperationName();
     }
 

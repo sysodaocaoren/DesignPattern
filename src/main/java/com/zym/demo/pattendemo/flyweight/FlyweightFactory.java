@@ -6,25 +6,25 @@ import java.util.Map;
 
 public class FlyweightFactory {
 
-    Map<String,MediaInfo> cacheMap = new HashMap<String,MediaInfo>();
+    Map<String, MediaInfo> cacheMap = new HashMap<String, MediaInfo>();
 
     private static FlyweightFactory instance = new FlyweightFactory();
 
-    private FlyweightFactory(){
+    private FlyweightFactory() {
 
     }
 
-    public static FlyweightFactory getInstance (){
+    public static FlyweightFactory getInstance() {
         return instance;
     }
 
-    public MediaInfo getMedia(String name){
+    public MediaInfo getMedia(String name) {
 
-        if(cacheMap.containsKey(name)){
+        if (cacheMap.containsKey(name)) {
             return cacheMap.get(name);
-        }else{
+        } else {
             MediaInfo mediaInfo = new FileMedia(name);
-            cacheMap.put(name,mediaInfo);
+            cacheMap.put(name, mediaInfo);
             return mediaInfo;
         }
 

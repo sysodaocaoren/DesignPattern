@@ -7,11 +7,11 @@ public class AwardCheckor {
 
     private List<People> peopleList = new ArrayList<People>();
 
-    public void addPeople(People people){
+    public void addPeople(People people) {
         peopleList.add(people);
     }
 
-    public void check(AwardCheck check){
+    public void check(AwardCheck check) {
         peopleList.stream().forEach(x -> x.accept(check));
     }
 }

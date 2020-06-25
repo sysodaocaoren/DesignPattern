@@ -13,13 +13,13 @@ public class AndOperation implements Operation {
 
     @Override
     public int interpreter() {
-        if(left.interpreter() == right.interpreter()){
-            if(left.interpreter() == 1){
+        if (left.interpreter() == right.interpreter()) {
+            if (left.interpreter() == 1) {
                 return 1;
-            }else{
+            } else {
                 return 0;
             }
-        }else{
+        } else {
             return 0;
         }
     }

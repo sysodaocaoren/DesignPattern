@@ -14,8 +14,8 @@ public class FlySytem {
         this.flyInfo = plane.fly();
     }
 
-    public void getTakeFlyInfo(){
-        System.out.println("takeOff:"+takeOffInfo+",flyInfo:"+flyInfo);
+    public void getTakeFlyInfo() {
+        System.out.println("takeOff:" + takeOffInfo + ",flyInfo:" + flyInfo);
     }
 
     public String getTakeOffInfo() {

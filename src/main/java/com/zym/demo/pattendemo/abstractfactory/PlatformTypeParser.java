@@ -6,8 +6,7 @@ public enum PlatformTypeParser {
 
     windows("com.zym.demo.pattendemo.abstractfactory.windows.WinsdowsPlatformFactory"),
     ios("com.zym.demo.pattendemo.abstractfactory.ios.IOSPlatformFactory"),
-    android("com.zym.demo.pattendemo.abstractfactory.android.AndroidPlatformFactory")
-    ;
+    android("com.zym.demo.pattendemo.abstractfactory.android.AndroidPlatformFactory");
 
     private String name;
 
@@ -15,10 +14,10 @@ public enum PlatformTypeParser {
         this.name = name;
     }
 
-    public static String getNameByValue(String value){
+    public static String getNameByValue(String value) {
 
-        return  Stream.of(PlatformTypeParser.values())
-                .filter(x ->value.equals(x.toString()))
+        return Stream.of(PlatformTypeParser.values())
+                .filter(x -> value.equals(x.toString()))
                 .findFirst()
                 .get()
                 .getName();

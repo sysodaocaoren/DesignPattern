@@ -2,7 +2,7 @@ package com.zym.demo.pattendemo.state;
 
 public class PrimaryLevel extends GameLevel {
 
-    public PrimaryLevel(Game game){
+    public PrimaryLevel(Game game) {
         this.levelName = "初级选手";
         this.game = game;
     }

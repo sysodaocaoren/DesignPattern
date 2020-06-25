@@ -16,11 +16,11 @@ public class MainMenu extends Menu {
         this.menus = menus;
     }
 
-    public void addMenu(Menu menu){
+    public void addMenu(Menu menu) {
         menus.add(menu);
     }
 
-    public void  removeMenu(Menu menu){
+    public void removeMenu(Menu menu) {
         menus.remove(menu);
     }
 

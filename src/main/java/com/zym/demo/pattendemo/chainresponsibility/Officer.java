@@ -2,7 +2,7 @@ package com.zym.demo.pattendemo.chainresponsibility;
 
 public abstract class Officer {
 
-    protected   Officer office;
+    protected Officer office;
 
     public void setOffice(Officer office) {
         this.office = office;

@@ -2,7 +2,7 @@ package com.zym.demo.pattendemo.state;
 
 public class FinalLevel extends GameLevel {
 
-    public FinalLevel(GameLevel gameLevel){
+    public FinalLevel(GameLevel gameLevel) {
         this.levelName = "骨灰选手";
         this.game = gameLevel.game;
     }

@@ -5,8 +5,7 @@ import java.util.stream.Stream;
 public enum DataBaseTypeParser {
 
     mysql("com.zym.demo.pattendemo.briage.MysqlDataCovertor"),
-    oracle("com.zym.demo.pattendemo.briage.OracleDataCovertor")
-    ;
+    oracle("com.zym.demo.pattendemo.briage.OracleDataCovertor");
 
     private String name;
 
@@ -14,10 +13,10 @@ public enum DataBaseTypeParser {
         this.name = name;
     }
 
-    public static String getNameByValue(String value){
+    public static String getNameByValue(String value) {
 
-        return  Stream.of(DataBaseTypeParser.values())
-                .filter(x ->value.equals(x.toString()))
+        return Stream.of(DataBaseTypeParser.values())
+                .filter(x -> value.equals(x.toString()))
                 .findFirst()
                 .get()
                 .getName();

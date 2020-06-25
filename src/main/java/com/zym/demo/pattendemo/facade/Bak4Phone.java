@@ -1,6 +1,6 @@
 package com.zym.demo.pattendemo.facade;
 
-public class Bak4Phone implements  BakIntef {
+public class Bak4Phone implements BakIntef {
     @Override
     public void bak() {
         Message message = new Message();

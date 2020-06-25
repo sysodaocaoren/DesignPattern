@@ -6,11 +6,11 @@ public class Students implements People {
 
     private String name;
 
-    private int  paperCount;
+    private int paperCount;
 
     private int score;
 
-    public Students(int peparCount,int score,String name){
+    public Students(int peparCount, int score, String name) {
         this.paperCount = peparCount;
         this.score = score;
         this.name = name;

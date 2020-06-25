@@ -1,6 +1,6 @@
 package com.zym.demo.pattendemo.proxy;
 
-public class PictureReal implements  Picture{
+public class PictureReal implements Picture {
 
     @Override
     public void show(String url) {

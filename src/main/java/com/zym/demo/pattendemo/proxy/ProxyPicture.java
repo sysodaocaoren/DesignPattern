@@ -9,14 +9,14 @@ public class ProxyPicture implements Picture {
 
         System.out.println("picture show little logo");
 
-        new Thread(()->{
+        new Thread(() -> {
             try {
                 int count = 1;
-                while (count < 6){
+                while (count < 6) {
 
-                    System.out.println("picture download "+count*20+"%");
+                    System.out.println("picture download " + count * 20 + "%");
                     Thread.sleep(2000);
-                    count ++;
+                    count++;
                 }
             } catch (InterruptedException e) {
                 e.printStackTrace();

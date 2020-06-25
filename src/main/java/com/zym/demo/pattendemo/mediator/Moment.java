@@ -6,12 +6,12 @@ public abstract class Moment {
 
     protected String wnedu;
 
-    public void  setMedia(MediaInf mediaInf){
+    public void setMedia(MediaInf mediaInf) {
         this.mediaInf = mediaInf;
     }
 
-    public void change(String wendu){
-        this.wnedu=wendu;
+    public void change(String wendu) {
+        this.wnedu = wendu;
         mediaInf.momentChange(this);
     }
 

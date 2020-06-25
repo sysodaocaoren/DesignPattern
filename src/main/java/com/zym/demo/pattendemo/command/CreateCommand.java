@@ -1,10 +1,10 @@
 package com.zym.demo.pattendemo.command;
 
-public class CreateCommand implements  Command {
+public class CreateCommand implements Command {
 
     private Operation operation;
 
-    public CreateCommand(){
+    public CreateCommand() {
         operation = new CreateOperation();
     }
 

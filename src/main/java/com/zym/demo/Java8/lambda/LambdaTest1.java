@@ -11,20 +11,20 @@ import com.zym.demo.Java8.lambda.interfacetest.ReturnOneParam;
  */
 public class LambdaTest1 {
 
-    public static void main(String [] args){
+    public static void main(String[] args) {
         //调用无参数，无返回值的函数式接口
-        NoReturnNoParam noReturnNoParam = ()-> System.out.println(77777);
+        NoReturnNoParam noReturnNoParam = () -> System.out.println(77777);
         noReturnNoParam.method();
 
         //调用有参数无返回的接口
-        NoReturnMultiParam noReturnMultiParam = (a,b, c)->{
-          System.out.println("11111"+a+b+c);
+        NoReturnMultiParam noReturnMultiParam = (a, b, c) -> {
+            System.out.println("11111" + a + b + c);
         };
-        noReturnMultiParam.method(7,8,9);
+        noReturnMultiParam.method(7, 8, 9);
 
         //调用只有一个参数的接口
-        ReturnOneParam returnOneParam = a ->{
-          return a;
+        ReturnOneParam returnOneParam = a -> {
+            return a;
         };
         System.out.println(returnOneParam.methos(2));
 
@@ -35,11 +35,11 @@ public class LambdaTest1 {
         //有时候我们不是要自己重写某个内部类的方法，我们可以利用lambda表达式的接口快速指向一个已经被实现的方法
         //语法：方法归属者::方法名，静态方法的归属者为类名，普通方法的归属者为对象
         ReturnMultiParam returnMultiParam1 = LambdaTest1::doubleNum;
-        returnMultiParam1.method(6,8);
+        returnMultiParam1.method(6, 8);
     }
 
     private static int doubleNum(int a, int b) {
-        return a+b;
+        return a + b;
     }
 
     /**

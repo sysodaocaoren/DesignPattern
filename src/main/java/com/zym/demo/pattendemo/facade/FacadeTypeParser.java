@@ -5,8 +5,7 @@ import java.util.stream.Stream;
 public enum FacadeTypeParser {
 
     sd("com.zym.demo.pattendemo.facade.Bak4SD"),
-    phone("com.zym.demo.pattendemo.facade.Bak4Phone")
-    ;
+    phone("com.zym.demo.pattendemo.facade.Bak4Phone");
 
     private String name;
 
@@ -14,10 +13,10 @@ public enum FacadeTypeParser {
         this.name = name;
     }
 
-    public static String getNameByValue(String value){
+    public static String getNameByValue(String value) {
 
-        return  Stream.of(FacadeTypeParser.values())
-                .filter(x ->value.equals(x.toString()))
+        return Stream.of(FacadeTypeParser.values())
+                .filter(x -> value.equals(x.toString()))
                 .findFirst()
                 .get()
                 .getName();

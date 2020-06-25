@@ -7,8 +7,7 @@ public enum BuilderTypeParser {
     full("com.zym.demo.pattendemo.buildpatten.FullModeBuilder"),
     simple("com.zym.demo.pattendemo.buildpatten.SimplateModeBuilder"),
     remeb("com.zym.demo.pattendemo.buildpatten.RemebModeBuilder"),
-    net("com.zym.demo.pattendemo.buildpatten.NetBuilder")
-    ;
+    net("com.zym.demo.pattendemo.buildpatten.NetBuilder");
 
     private String name;
 
@@ -16,10 +15,10 @@ public enum BuilderTypeParser {
         this.name = name;
     }
 
-    public static String getNameByValue(String value){
+    public static String getNameByValue(String value) {
 
-        return  Stream.of(BuilderTypeParser.values())
-                .filter(x ->value.equals(x.toString()))
+        return Stream.of(BuilderTypeParser.values())
+                .filter(x -> value.equals(x.toString()))
                 .findFirst()
                 .get()
                 .getName();

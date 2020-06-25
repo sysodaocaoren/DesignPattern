@@ -1,6 +1,6 @@
 package com.zym.demo.pattendemo.interpreter;
 
-public class OrOperation implements  Operation {
+public class OrOperation implements Operation {
 
     private Operation left;
 
@@ -13,13 +13,13 @@ public class OrOperation implements  Operation {
 
     @Override
     public int interpreter() {
-        if(left.interpreter() == right.interpreter()){
-            if(left.interpreter() == 0){
+        if (left.interpreter() == right.interpreter()) {
+            if (left.interpreter() == 0) {
                 return 0;
-            }else{
+            } else {
                 return 1;
             }
-        }else{
+        } else {
             return 1;
         }
     }

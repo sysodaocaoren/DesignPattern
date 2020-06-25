@@ -1,6 +1,6 @@
 package com.zym.demo.pattendemo.visit;
 
-public class Teacher implements  People{
+public class Teacher implements People {
 
     private int paperCount;
 
@@ -9,8 +9,7 @@ public class Teacher implements  People{
     private String name;
 
 
-
-    public Teacher(int paperCount,int replyScore,String name){
+    public Teacher(int paperCount, int replyScore, String name) {
         this.paperCount = paperCount;
         this.replyScore = replyScore;
         this.name = name;

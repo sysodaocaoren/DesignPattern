@@ -4,8 +4,9 @@ package com.zym.demo.pattendemo.command;
  * 命令模式
  * 需求：要开发一个windows的界面，有一个主菜单，可以添加子菜单
  * 子菜单有click方法，可以执行打开，新建，编辑的命令
- *
+ * <p>
  * 思路：采用命令模式
+ *
  * @Author zhuyumeng
  * @Since 2020年3月30日21:40:27
  */

@@ -16,9 +16,9 @@ public abstract class GameLevel {
 
     public abstract void upLevel();
 
-    public abstract  void dowmLevel();
+    public abstract void dowmLevel();
 
-    public void showLevel(){
-        System.out.println("now level : "+levelName);
+    public void showLevel() {
+        System.out.println("now level : " + levelName);
     }
 }

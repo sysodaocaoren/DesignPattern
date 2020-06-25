@@ -4,7 +4,7 @@ public class OpenCommand implements Command {
 
     private Operation operation;
 
-    public OpenCommand(){
+    public OpenCommand() {
         operation = new OpenOperation();
     }
 

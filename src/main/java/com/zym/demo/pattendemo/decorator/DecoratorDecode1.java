@@ -4,7 +4,7 @@ public class DecoratorDecode1 implements DecodeInterf {
 
     private DecodeInterf decodeInterf;
 
-    public DecoratorDecode1(DecodeInterf decodeInterf){
+    public DecoratorDecode1(DecodeInterf decodeInterf) {
         this.decodeInterf = decodeInterf;
     }
 

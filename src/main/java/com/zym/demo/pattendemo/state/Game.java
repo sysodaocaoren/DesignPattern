@@ -17,16 +17,16 @@ public class Game {
         this.gameLevel = gameLevel;
     }
 
-    public Game(){
+    public Game() {
         gameLevel = new PrimaryLevel(this);
     }
 
-    public void updateLevel(){
+    public void updateLevel() {
         System.out.println("升级了");
         gameLevel.upLevel();
     }
 
-    public void downLevel(){
+    public void downLevel() {
         System.out.println("掉分了");
         gameLevel.dowmLevel();
     }

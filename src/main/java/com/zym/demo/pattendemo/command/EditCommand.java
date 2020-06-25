@@ -1,10 +1,10 @@
 package com.zym.demo.pattendemo.command;
 
-public class EditCommand implements  Command {
+public class EditCommand implements Command {
 
     private Operation operation;
 
-    public EditCommand(){
+    public EditCommand() {
         operation = new EditOperation();
     }
 

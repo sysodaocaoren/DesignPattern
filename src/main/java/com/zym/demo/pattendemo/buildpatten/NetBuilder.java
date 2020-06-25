@@ -2,6 +2,7 @@ package com.zym.demo.pattendemo.buildpatten;
 
 public class NetBuilder extends Builder {
     MediaPlayer mediaPlayer = new MediaPlayer();
+
     @Override
     public void buildMainMode() {
         mediaPlayer.setMainMode(true);
