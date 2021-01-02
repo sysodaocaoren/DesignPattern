@@ -1,7 +1,5 @@
 package com.zym.demo.pattendemo.state;
 
-import sun.plugin2.message.GetAppletMessage;
-
 /**
  * 游戏类
  */
